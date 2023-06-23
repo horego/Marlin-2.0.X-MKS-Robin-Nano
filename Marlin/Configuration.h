@@ -81,11 +81,11 @@
 #endif
   
 
-//TODO:
+//TODO: Set correct OFFSET_Z (-0.45) maybe a little bit 0.15 lower
 // Specify a Probe Offsetposition { X, Y, Z }
 #define OFFSET_X 0.3              // - Left   |   Right +
 #define OFFSET_Y -36              // - Front  |   Back +
-#define OFFSET_Z 0              // - Nozzle ist Higher as the Probe 0 Point |  + Really? you did somthing wrong.
+#define OFFSET_Z -0.45              // - Nozzle ist Higher as the Probe 0 Point |  + Really? you did somthing wrong.
 
 
 // Motion Control Settings
@@ -2273,13 +2273,18 @@
 // Preheat Constants
 #define PREHEAT_1_LABEL       "PLA"
 #define PREHEAT_1_TEMP_HOTEND 200
-#define PREHEAT_1_TEMP_BED     60
+#define PREHEAT_1_TEMP_BED     50
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "PETG"
-#define PREHEAT_2_TEMP_HOTEND 235
+#define PREHEAT_2_TEMP_HOTEND 225
 #define PREHEAT_2_TEMP_BED    70
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
+
+#define PREHEAT_3_LABEL       "ASA"
+#define PREHEAT_3_TEMP_HOTEND 235
+#define PREHEAT_3_TEMP_BED    90
+#define PREHEAT_3_FAN_SPEED     0 // Value from 0 to 255
 
 /**
  * Nozzle Park
